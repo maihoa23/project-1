@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mai Hoa" />
+    <meta
+      name="description"
+      content="this page contain all the things I am learning how to create as I learn HTML."
+    />
+    <title>my first web page</title>
+    <link rel="icon" href="OIP.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>My goals</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learn HTML</a>
+          </li>
+          <li>
+            <a href="#blabla">Just me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <article id="html">
+        <h2>I'm ready to learn HTML</h2>
+        <figure>
+          <figcaption>An example of HTML</figcaption>
+          <code>&lt;h1&gt;Hello world&lt;/h1&gt; </code>
+        </figure>
+        <p>this is my first page</p>
+
+        <h3>It will be fun</h3>
+        <p>Let me tell you how I learn!</p>
+        <ol>
+          <li>...be happy</li>
+          <li>...be <abbr title="hay khoc nhe">Le Gia Hung</abbr></li>
+          <li>...be effective</li>
+        </ol>
+        <aside>
+          <details>
+            <summary>
+              Guess the <mark>number of hours</mark> I code per day
+            </summary>
+            <p>
+              I start at <time datetime="08:00">8am</time> and I write code for
+              <time datetime="PT3H"> <mark>3 hours</mark></time> every morning
+            </p>
+          </details>
+        </aside>
+        <br />
+        <table>
+          <caption>
+            My daily schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00"
+                  >11am</time
+                >
+              </td>
+              <td>Write code</td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00"
+                  >12pm</time
+                >
+              </td>
+              <td>Eat lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">
+                  5pm</time
+                >
+              </td>
+              <td>Learn drawing</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All other times</td>
+              <td>Free time</td>
+            </tr>
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                And that's what I do everyday! It's not boring at all
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      <hr />
+      <article id="blabla">
+        <h2>It will be a meaningful summer</h2>
+        <ul>
+          <li><p>I will utilize my time in order to have good results.</p></li>
+          <li>
+            <p>I wish I can <em>be better</em></p>
+          </li>
+        </ul>
+        <h3>&nbsp; Lalala</h3>
+        <p>Can I help the world with my skills?</p>
+
+        <p>I love <a href="https://daihoc.fpt.edu.vn/">FPTU</a> so much!!!</p>
+        <address>Hoa Lac, Ha Noi, Viet Nam</address>
+        <figure>
+          <img
+            src="img/image.png"
+            alt="FPT Logo"
+            title="my fav uni"
+            width="300"
+            height="200"
+          />
+          <figcaption>Logo</figcaption>
+        </figure>
+
+        <!--What's your fav university?-->
+        <br /><br />
+        <h3>hehehe</h3>
+        <p>I belive in <strong>myself</strong>!</p>
+        <p>I don't want to study at other university</p>
+        <dl>
+          <dt>NEU university</dt>
+          <dd>I don't like Economics</dd>
+          <dt>Technolody University</dt>
+          <dd>So old and small!</dd>
+        </dl>
+        <figure>
+          <img
+            src="img/imagecopy.png"
+            alt="FPT UNI"
+            title="FPT campus"
+            width="300"
+            height="100"
+            loading="lazy"
+          />
+          <figcaption>modern FPT campus</figcaption>
+        </figure>
+      </article>
+
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I really like to hear from you!</p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Hoa"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Le"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Your secret"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="000000000"
+                pattern="[0-9]{10}"
+                required
+              />
+            </p>
+            <p>
+              <label for="decade">Favorite Decade:</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2020"
+                step="10"
+                value="1990"
+                required
+              />
+            </p>
+            <p>
+              <label for="drink">Favorite Drink:</label>
+              <select name="drink" id="drink" multiple size="5">
+                <optgroup label="Popular drinks">
+                  <option value="coffee">Coffee</option>
+                  <option value="tea">Tea</option>
+                  <option value="latte">Latte</option>
+                  <option value="bobatea">Bobatea</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+            </p>
+            <!--         <p>
+            <label for="drink">Favorite Drink:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+                <option value="coffee">
+                <option value="tea">
+                <option value="latte">
+                <option value="bobatea">
+                <option value="other">
+
+            </datalist>
+        </p> -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What's your favorite food?</legend>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="food"
+                id="hamburger"
+                value="hamburger"
+              />
+              <label for="hamburger">Hamburger</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="pets"
+                id="otherpet"
+                value="otherpet"
+              />
+              <label for="otherpet">Other</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Send me a note!</legend>
+            <label for="message">Your message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="type your message here"
+            ></textarea>
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <ul>
+      <li>
+        menu 1
+        <ol type="I">
+          <li>
+            menu 1.1
+            <ol>
+              <li>menu 1.1.1</li>
+              <li>menu 1.1.2</li>
+              <li>menu 1.1.3</li>
+            </ol>
+          </li>
+          <li>menu 1.2</li>
+        </ol>
+      </li>
+      <li>menu 2</li>
+      <li>menu 3</li>
+    </ul>
+    <a
+      href="mailto:tranthanh1061984@gmail.com?subject=help me&body=help me love myself"
+      >Nhắn tui</a
+    >
+  </body>
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy;
+      <a href="practice.html"><abbr title="cute">Mai Hoa</abbr></a>
+      &gt;&gt;&gt;
+    </p>
+    <p><a href="#">Back to top</a></p>
+  </footer>
+</html>
